@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>eihort | readme - helper</title>
+		<link rel="icon" type="image/png" href="readme/images/tab-logo.png">
+	</head>
+	<style type="text/css">
+		nav {clear:left; background-color:#454545; overflow:hidden; margin:0 0 .1em 0;}
+			.wrapper{ margin:0 auto;}
+			nav ul {list-style:none; list-style-image:none; margin: 0; padding: 0;}
+			nav a{display:block; background-color:#454545; color:#fff; text-decoration:none; letter-spacing:1px; float:left; text-align:center;}
+			nav a:hover {background-color:#262626; color:#fff;}
+			#mainmenu a {padding:.8em 0; width:33.33%;}
+			
+		.style {width:100%; overflow:hidden; display:inline; margin:0 1% 0 0;}
+			.style ul {list-style-type:none; margin:.2em 0 .4em 1.5em;}
+			.style .headline {font-size:170%; font-weight:bold; text-align:center; margin:0 0 0 .5em;}
+			.style .note {text-align:center; font-size:130%; margin:0 0 .2em 0}
+			.style .notetext {text-align:left; font-size:105%; margin:0 0 1em 0}
+
+		@media only screen and (min-width: 700px) {
+			nav li{margin:0;}
+			menulist li{margin:0;}
+		}
+
+		@media only screen and (min-width: 1000px) {
+			.wrapper{width:1000px; margin:0 auto;}
+			.mainmenu {width:250px;}
+			.menulist {width:200px;}
+		}
+	</style>
+	<body>
+		<script type="text/javascript">
+			var success = false;
+			var img = new Image();
+			img.src = 'readme/images/tab-logo.png';
+			img.onload = function() {
+				success = true;
+			}
+			img.onerror = function() {
+				success = false;
+			}
+			
+			function check404(){				
+				if(window.success){
+					window.location = 'readme/page-main-new.html';
+				}else{
+					alert('offline');
+					// nimm lokales Bild
+				}
+			}
+			setTimeout('check404()',100);
+		</script>
+		<div class="wrapper">
+			<nav>
+				<ul id="mainmenu">
+					<li><a href="#linux">linux</a></li>
+					<li><a href="#mac">mac</a></li>
+					<li><a href="#windows">windows</a></li>
+				</ul>
+			</nav>
+			<p>
+				<div class="style">
+					<div class="note">There was an error loading the main readme page.</div>
+					<div class="notetext">This is likely due to missing files on your hard drive. To install eihort and/or ensure that it was done correctly see the install instructions below. Be sure that the "readme.html" file is placed in same the location where the "readme" folder is located.</div>
+						<div class="headline"><a name="linux"></a>Intallation on Linux</div>
+							<ul>
+								Text-Linux Installation
+							</ul>
+						<div class="headline"><a name="mac"></a>Intallation on Mac</div>
+							<ul>
+								Text-Mac Installation
+							</ul>
+						<div class="headline"><a name="windows"></a>Intallation on Windows</div>
+							<ul>
+								Text-Windows Installation
+							</ul>
+					
+				</div>
+			</p>
+		</div>
+	</body>
+</html>

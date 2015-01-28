@@ -1,0 +1,5 @@
+SDL2.lib, SDL2_image.lib, and zlib.lib are 64bit static
+libraries compiled for Eihort's release build.
+libpng is built statically in SDL2_image.lib.
+To compile Eihort in debug, you will have to download
+these libraries separately.

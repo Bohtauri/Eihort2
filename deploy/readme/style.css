@@ -1,0 +1,70 @@
+/* -- nav style --*/
+nav {clear:left; background-color:#454545; overflow:hidden; margin:0 0 .1em 0;}
+	.wrapper{ margin:0 auto;}
+	.wrapper .code { text-indent:30px; margin: .05em 0 .05em 0;}
+	nav ul {list-style:none; list-style-image:none; margin: 0; padding: 0;}
+	nav a{display:block; background-color:#454545; color:#fff; text-decoration:none; letter-spacing:1px; float:left; text-align:center;}
+	nav a:hover {background-color:#262626; color:#fff;}
+	#mainmenu a {padding:.8em 0; width:25%;}
+	#submenu a {padding:.2em 0; width:15%;}
+	.active {background-color:#262626; color:#fff; font-weight:bold;}
+
+/* -- sidebar style -- */
+.menulist {display:inline; background-color:#fafafa;}
+	.menulist ul {list-style:none; list-style-image: none; margin: .1em 0 0 0; padding: 0; float:left;}
+	.menulist a{display:block; background-color:#fafafa; color:#000; border:solid 1px #262626; text-decoration:none; letter-spacing:1px; float:none; text-align:center; margin: .2em 0; overflow:hidden;}
+	.menulist a:hover {background-color:#454545; color:#fff;}
+	#mlist a {padding:.3em 1.5em;}
+	
+/* -- main page style -- */
+.mainpagelayout {font-size:110%;}
+	.mainpagelayout ul {list-style:none; list-style-image:none; margin: 0; padding: 0; text-align:left; font-size:110%;}
+	.mainpageinfo .headline {text-decoration:none; font-weight:bold; font-size:120%; margin-top:1em; text-indent:6%;}
+	.mainpageinfo .key {list-style:disc; list-style-image:none; margin-left:10%;}
+	
+/* -- version history style -- */
+.verhist {width:78%; overflow:hidden; display:inline; float:right; margin:0 1% 0 0;}
+	.verhist:hover {background-color:#f2f2f2;}
+	.verhist ul {list-style-type:none; margin:.2em 0 .4em 1.5em;}
+	.verhist .headline {font-size:150%; font-weight:bold; margin:0 0 0 .5em;}
+	.verhist .subheadline {font-size:110%; text-decoration:underline; margin:0 0 0 1.8em;}
+	.verwrapper {width:78%; float:right; margin:0;}
+	.line {width:90%; border-bottom:1px dotted #c0c0c0; margin: 0.2em auto;}
+#download {list-style:none; list-style-image:none; margin: 0; padding: 0; display:block; text-decoration:none; letter-spacing:1px; text-align:center;}
+	#download li {width:25%; float:left;}
+	#download a {color:#000}
+	
+/* -- config layout style -- */
+.configlayout {width:78%; overflow:hidden; display:inline; float:right; margin:0 1% 0 0;}
+	.configlayout .note {text-align:center; font-size:130%;}
+	.configlayout .sidenote {float:right; width:25%; text-align:right;}
+	.configlayout .sidenote a{color:#000}
+	.configlayout .headline {font-size:125%; font-weight:bold; text-align:left; padding:0; margin:0;}
+	.configlayout .keys {margin: 0 0 3% 5%; padding:0; text-align:left; text-decoration:none;}
+	.configlayout .keys ul {list-style:none; list-style-image:none; margin: 0; padding: 0;}
+	.configlayout .keys a {color:#000}
+	.configlayout .subkeys {margin: 0 0 0% 4%; padding:0; text-align:left; text-decoration:none;}
+	.configlayout .subkeys ul {list-style:disc; list-style-image:none; margin: 0; padding: 0;}
+
+/* -- blockid layout style -- */
+.blockidlayout {width:70%; overflow:hidden; display:inline; float:right; margin:0 1% 0 0;}
+	.blockidlayout .headline {font-size:125%; font-weight:bold; text-align:left; padding:0; margin:0;}
+	.blockidlayout .keys {margin: 0 0 3% 5%; padding:0; text-align:left; text-decoration:none;}
+	.blockidlayout .keys ul {list-style:none; list-style-image:url(images/minus.png); margin: 0; padding: 0;}
+	.blockidlayout .keys a {color:#000}
+	.blockidlayout .subkeys {margin: 0 0 0% 4%; padding:0; text-align:left; text-decoration:none;}
+	.blockidlayout .subkeys ul {list-style:disc; list-style-image:none; margin: 0; padding: 0;}
+	
+/* -- screen size -- */
+@media only screen and (min-width: 700px) {
+	nav li{margin:0;}
+	menulist li{margin:0;}
+}
+
+@media only screen and (min-width: 1000px) {
+	.wrapper{width:1000px; margin:0 auto;}
+	.mainmenu {width:250px;}
+	.submenu {width:210px;}
+	.menulist {width:200px;}
+	.verhist, .verwrapper {width:780px;}
+}

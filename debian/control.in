@@ -1,0 +1,9 @@
+Package: @package@
+Version: @version@-1
+Section: games
+Priority: optional
+Architecture: @arch@
+Depends: libc6, libglew1.7, liblua5.1-0-dev, libpng12-0, libsdl1.2debian, libsdl-image1.2, libstdc++6, libz1
+Maintainer: no-one <dev@null.com>
+Description: Eihort is an OpenGL Minecraft map renderer
+  with a really long view distance.

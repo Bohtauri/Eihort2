@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>eihort | readme - .documentation</title>
+	<link rel="icon" type="image/png" href="images/tab-logo.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>		
+	<div class="wrapper">
+		<nav>
+			<ul id="mainmenu">
+				<li><a href="page-main-new.html">.main page</a></li>
+				<li><a href="page-install-linux.html">.get started</a></li>
+				<li><a href="#" class="active">.documentation</a></li>
+				<li><a href="page-about-licence.html">.about</a></li>
+			</ul>
+		</nav>
+		<nav>
+			<ul id="submenu">
+				<li><a href="page-doc-history.html">version history</a></li>
+				<li><a href="#" class="active">key layout</a></li>
+				<li><a href="page-doc-config.html">config file</a></li>
+				<li><a href="page-doc-blocktype.html">block settings</a></li>
+				<li><a href="page-doc-bugs.html">known bugs</a></li>
+			</ul>
+		</nav>
+		<p>
+			<div class="menulist">
+				<ul id="mlist">
+					<li><a href="#movement">Movement</a></li>
+					<li><a href="#setting">Setting</a></li>
+					<li><a href="#eihort">Eihort</a></li>
+					<li><a href="#spline">Spline Keys</a></li>
+				</ul>
+			</div>
+			<div class="configlayout">
+				<div class="note">the default key layout</div>
+				<div class="headline"><a name="movement"></a>Movement:</div>
+				<div class="sidenote">Find <a href="http://wiki.libsdl.org/moin.cgi/SDL_Keycode">more valid keys here</a>. Usage without "SDLK_"</div>
+				<div class="keys">
+					<ul>
+						<li>W = Forwards</li>
+						<li>S = Backwards</li>
+						<li>A = Left</li>
+						<li>D = Right</li>
+						<li>SPACE = Up</li>
+						<li>X = Down</li>
+						<li>CTRL LEFT & CTRL RIGHT = Decrease movement speed</li>
+						<li>SHIFT LEFT & SHIFT RIGHT = Increase movement speed</li>
+					</ul>
+				</div>
+				<div class="headline"><a name="setting"></a>Setting:</div>
+				<div class="keys">
+					<ul>
+						<li>[ & PAGEDOWN = Decrease view distance</li>
+						<li>] & PAGEUP = Increase view distance</li>
+						<li>T = Add time</li>
+						<li>Y = Remove time</li>
+					</ul>
+				</div>
+				<div class="headline"><a name="eihort"></a>Eihort:</div>
+				<div class="keys">
+					<ul>
+						<li>R = Reload world</li>
+						<li>L = Change light mode</li>
+						<li>N = Change moon phase</li>
+						<li>O = Go to defined position</li>
+						<li>P = Go to players position</li>
+						<li>F1 = Toggle user interface</li>
+						<li>F2 = Take screenshot</li>
+						<li>ESC = Free mouse</li>
+						<li>M = Toggle world monitoring</li>
+					</ul>
+				</div>
+				<div class="headline"><a name="spline"></a>Spline keys:</div>
+				<div class="keys">
+					<ul>
+						<li>Q = Add spline point</li>
+						<li>0 = Delete all spline points</li>
+						<li>1 = Jump to first spline point</li>
+						<li>2 = Do spline (direction first to last)</li>
+						<li>3 = Jump to last spline point</li>
+						<li>4 = Do spline (direction last to first)</li>
+						<li>E = Delete last added spline point</li>
+					</ul>
+				</div>
+			</div>
+		</p>
+	</div>	
+</body>
+</html>
